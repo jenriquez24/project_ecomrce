@@ -393,8 +393,10 @@ FodyWeavers.xsd
 *.cab
 *.msi
 *.msix
-*.msm
+*.msmg
 *.msp
 
 # JetBrains Rider
 *.sln.iml
+.env
+node_modules

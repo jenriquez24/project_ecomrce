@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "eb98f026-d45a-44aa-a4d7-2557bb310568",
+		"name": "e_comerce_shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14213112",
+		"_collection_link": "https://speeding-sunset-902127.postman.co/workspace/Trello-API~cb7a859e-4ad6-431d-a1ab-6e3c955e92cf/collection/14213112-eb98f026-d45a-44aa-a4d7-2557bb310568?action=share&source=collection_link&creator=14213112"
+	},
+	"item": [
+		{
+			"name": "signup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"rpineda\",\n    \"email\":\"rpineda@x-codec.net\",\n    \"password\":\"123456\",\n    \"roles\":[\"admin\", \"moderator\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4569/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"rpineda\",\n   \n    \"password\":\"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4569/api/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signout",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:4569/api/auth/signout",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"auth",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestAll",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4569/api/test/all",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"test",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4569/api/test/user",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"test",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestModerator",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4569/api/test/moderator",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"test",
+						"moderator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TestAdmin",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4569/api/test/admin",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"test",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"nombre\": \"SMARTTV SAMSUNG 55' FUL LHD\",\r\n    \"descripcion\": \"Imagen en 4k\",\r\n    \"precio\": 1600,\r\n    \"categoria\": \"Linea Blanca\",\r\n    \"stock\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4569/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProd",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"2\",\r\n    \"nombre\": \"LAVADORA LG 13KG SMART\",\r\n    \"descripcion\": \"Semi Acero Inoxidable\",\r\n    \"precio\": 999,\r\n    \"categoria\": \"Linea Blanca\",\r\n    \"stock\": 19\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4569/api/updateprod",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"updateprod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProd",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4569/api/deleteprod",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"deleteprod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shoppingcart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"id\":2,\r\n        \"precio\":999,\r\n        \"cantidad\":2,\r\n        \"total\":1898,\r\n        \"userId\":\"67f43df30b36fee0c4c4e481\"\r\n        \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4569/api/addshopp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"addshopp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "createCupon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"id\":3,\r\n     \"Name\":\"PREMIO30\",\r\n     \"descuento\": 0.3,\r\n     \"estado\":1\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4569/api/createCupon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4569",
+					"path": [
+						"api",
+						"createCupon"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
